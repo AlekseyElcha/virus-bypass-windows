@@ -74,7 +74,7 @@
             // 
             processesButton.Location = new Point(6, 61);
             processesButton.Name = "processesButton";
-            processesButton.Size = new Size(209, 29);
+            processesButton.Size = new Size(219, 29);
             processesButton.TabIndex = 1;
             processesButton.Text = "Управление процессами";
             processesButton.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             autoStartupButton.Location = new Point(6, 26);
             autoStartupButton.Name = "autoStartupButton";
-            autoStartupButton.Size = new Size(207, 29);
+            autoStartupButton.Size = new Size(219, 29);
             autoStartupButton.TabIndex = 0;
             autoStartupButton.Text = "Автозагрузка";
             autoStartupButton.UseVisualStyleBackColor = true;

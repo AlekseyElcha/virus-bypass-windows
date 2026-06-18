@@ -2,21 +2,30 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>vf.manifest</ApplicationManifest>
+    <ApplicationIcon>logo_virusbypass.ico</ApplicationIcon>
+	<Company>Pelican4ik</Company>
+	<Authors>Pelican4ik / @AlekseyElcha</Authors>
+	<Description>Утилита для обхода вирусов</Description>
+	<Product>VirusBypass by Pelican4ik</Product>
+	<NeutralLanguage>ru-RU</NeutralLanguage>
+	<Version>1.1.0</Version>
+	<AssemblyVersion>1.0.4.2</AssemblyVersion>
+	<FileVersion>1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="everyt.exe" />
-    <None Remove="explpp.exe" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="everyt.exe" />
-    <EmbeddedResource Include="explpp.exe" />
+    <Content Include="logo_virusbypass.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
   </ItemGroup>
 
   <ItemGroup>
