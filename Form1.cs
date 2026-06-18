@@ -263,6 +263,48 @@ namespace VirusBypass
             VirusRestrictionResetter.ResetAllSystemRestrictions();
         }
 
+        private void restoreUACButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string registryPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System";
+
+                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registryPath, true))
+                {
+                    if (key != null)
+                    {
+                        key.SetValue("EnableLUA", 1, RegistryValueKind.DWord);
+
+                        key.SetValue("ConsentPromptBehaviorAdmin", 5, RegistryValueKind.DWord);
+
+                        key.SetValue("ConsentPromptBehaviorUser", 3, RegistryValueKind.DWord);
+
+                        key.SetValue("PromptOnSecureDesktop", 1, RegistryValueKind.DWord);
+
+                        MessageBox.Show(
+                            "Настройки UAC успешно изменены на стандартные!\n\n" +
+                            "Внимание: Чтобы изменения вступили в силу, необходимо перезагрузить компьютер.",
+                            "Успех",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                        );
+                    }
+                    else
+                    {
+                        MessageBox.Show("Не удалось получить доступ к системной ветке реестра.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show("Недостаточно прав для изменения реестра. Запустите программу от Администратора!", "Ошибка доступа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка при восстановлении UAC: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public static string GetWindowsInfoViaWmi()
         {
             try

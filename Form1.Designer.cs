@@ -52,6 +52,7 @@
             OSVersionLabel = new Label();
             label2 = new Label();
             programVersionLabel = new Label();
+            restoreUACButton = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
@@ -92,6 +93,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(restoreUACButton);
             groupBox2.Controls.Add(restoreFontsButton);
             groupBox2.Controls.Add(resetLimitsButton);
             groupBox2.Controls.Add(accessibilityToolRestoreButton);
@@ -101,7 +103,7 @@
             groupBox2.Controls.Add(accessibilityToolSubstButton);
             groupBox2.Location = new Point(12, 125);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(233, 284);
+            groupBox2.Size = new Size(233, 314);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Быстрые действия";
@@ -109,7 +111,7 @@
             // restoreFontsButton
             // 
             restoreFontsButton.BackgroundImage = (Image)resources.GetObject("restoreFontsButton.BackgroundImage");
-            restoreFontsButton.Location = new Point(8, 236);
+            restoreFontsButton.Location = new Point(6, 271);
             restoreFontsButton.Name = "restoreFontsButton";
             restoreFontsButton.Size = new Size(221, 29);
             restoreFontsButton.TabIndex = 4;
@@ -195,7 +197,7 @@
             // 
             groupBox3.Controls.Add(groupBox4);
             groupBox3.Controls.Add(utilsButton);
-            groupBox3.Location = new Point(12, 415);
+            groupBox3.Location = new Point(12, 445);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(233, 74);
             groupBox3.TabIndex = 3;
@@ -224,7 +226,7 @@
             // aboutProgramButton
             // 
             aboutProgramButton.BackColor = SystemColors.Info;
-            aboutProgramButton.Location = new Point(18, 573);
+            aboutProgramButton.Location = new Point(18, 616);
             aboutProgramButton.Name = "aboutProgramButton";
             aboutProgramButton.Size = new Size(219, 29);
             aboutProgramButton.TabIndex = 4;
@@ -235,9 +237,9 @@
             // groupBox5
             // 
             groupBox5.Controls.Add(diskButton);
-            groupBox5.Location = new Point(12, 495);
+            groupBox5.Location = new Point(12, 525);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(233, 65);
+            groupBox5.Size = new Size(233, 77);
             groupBox5.TabIndex = 5;
             groupBox5.TabStop = false;
             groupBox5.Text = "Работа с дисками";
@@ -288,12 +290,22 @@
             programVersionLabel.TabIndex = 9;
             programVersionLabel.Text = "label3";
             // 
+            // restoreUACButton
+            // 
+            restoreUACButton.Location = new Point(6, 236);
+            restoreUACButton.Name = "restoreUACButton";
+            restoreUACButton.Size = new Size(221, 29);
+            restoreUACButton.TabIndex = 9;
+            restoreUACButton.Text = "Вернуть UAC";
+            restoreUACButton.UseVisualStyleBackColor = true;
+            restoreUACButton.Click += restoreUACButton_Click;
+            // 
             // w
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1064, 649);
+            ClientSize = new Size(1064, 652);
             Controls.Add(programVersionLabel);
             Controls.Add(label2);
             Controls.Add(OSVersionLabel);
@@ -344,5 +356,6 @@
         private Label OSVersionLabel;
         private Label label2;
         private Label programVersionLabel;
+        private Button restoreUACButton;
     }
 }
