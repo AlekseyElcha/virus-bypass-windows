@@ -13,11 +13,11 @@
 - и многое другое!
 
 Совместимость:
-- Windows 11 64-bit ~100%
-- Windows 11 32-bit (еще не тестировалось)
+- Windows 11 64-bit ~ 100 %
+- Windows 11 32-bit ~ 100 %
 
-- Windows 10 64-bit ~100%
-- Windows 11 32-bit (еще не тестировалось)
+- Windows 10 64-bit ~ 100 %
+- Windows 10 32-bit ~ 100 %
 
-- Windows 8.1 64-bit ~80%
+- Windows 8.1 64-bit ~ 65 %
 - Windows 8.1 32-bit (еще не тестировалось)
