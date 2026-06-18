@@ -17,7 +17,7 @@ namespace VirusBypass
             string osName = GetWindowsInfoViaWmi();
             if (osName.Contains("Windows Vista") || osName.Contains("Windows 7") || osName.Contains("Windows 8"))
             {
-                MessageBox.Show("Программа не полностью совместима с вашей версией Windows :(\r\n" +
+                MessageBox.Show("Программа предназначена для полее поздних версий Windows :(\r\n" +
                     "Некоторые функции могут работать некоррекно.",
                     "Проблемы с совместимостью",
                     MessageBoxButtons.OK,
@@ -29,9 +29,8 @@ namespace VirusBypass
             else if (osName.Contains("32"))
             {
                 MessageBox.Show(" :(\r\n" +
-                    "Программа может работать некорректно на 32-битной версии Windows!\r\n" +
-                    "Многое может работать некорректно!",
-                    "Проблемы с совместимостью",
+                    "Часть функций программы МОЖЕТ не работать на 32-битной версии Windows",
+                    "Предупреждение",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
