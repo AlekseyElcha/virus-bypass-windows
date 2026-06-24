@@ -33,6 +33,7 @@
             processesButton = new Button();
             autoStartupButton = new Button();
             groupBox2 = new GroupBox();
+            restoreUACButton = new Button();
             restoreFontsButton = new Button();
             resetLimitsButton = new Button();
             accessibilityToolRestoreButton = new Button();
@@ -52,12 +53,14 @@
             OSVersionLabel = new Label();
             label2 = new Label();
             programVersionLabel = new Label();
-            restoreUACButton = new Button();
+            fileExplorerButton = new Button();
+            groupBox6 = new GroupBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox5.SuspendLayout();
+            groupBox6.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -101,12 +104,22 @@
             groupBox2.Controls.Add(restoreDISMButton);
             groupBox2.Controls.Add(cmdLineButton);
             groupBox2.Controls.Add(accessibilityToolSubstButton);
-            groupBox2.Location = new Point(12, 125);
+            groupBox2.Location = new Point(12, 194);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(233, 314);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Быстрые действия";
+            // 
+            // restoreUACButton
+            // 
+            restoreUACButton.Location = new Point(6, 236);
+            restoreUACButton.Name = "restoreUACButton";
+            restoreUACButton.Size = new Size(221, 29);
+            restoreUACButton.TabIndex = 9;
+            restoreUACButton.Text = "Вернуть UAC";
+            restoreUACButton.UseVisualStyleBackColor = true;
+            restoreUACButton.Click += restoreUACButton_Click;
             // 
             // restoreFontsButton
             // 
@@ -183,7 +196,7 @@
             panel1.Controls.Add(flowLayoutPanel1);
             panel1.Location = new Point(265, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(780, 580);
+            panel1.Size = new Size(810, 605);
             panel1.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -197,7 +210,7 @@
             // 
             groupBox3.Controls.Add(groupBox4);
             groupBox3.Controls.Add(utilsButton);
-            groupBox3.Location = new Point(12, 445);
+            groupBox3.Location = new Point(12, 514);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(233, 74);
             groupBox3.TabIndex = 3;
@@ -226,7 +239,7 @@
             // aboutProgramButton
             // 
             aboutProgramButton.BackColor = SystemColors.Info;
-            aboutProgramButton.Location = new Point(18, 616);
+            aboutProgramButton.Location = new Point(18, 672);
             aboutProgramButton.Name = "aboutProgramButton";
             aboutProgramButton.Size = new Size(219, 29);
             aboutProgramButton.TabIndex = 4;
@@ -237,7 +250,7 @@
             // groupBox5
             // 
             groupBox5.Controls.Add(diskButton);
-            groupBox5.Location = new Point(12, 525);
+            groupBox5.Location = new Point(12, 585);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(233, 77);
             groupBox5.TabIndex = 5;
@@ -257,7 +270,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(660, 620);
+            label1.Location = new Point(681, 663);
             label1.Name = "label1";
             label1.Size = new Size(32, 20);
             label1.TabIndex = 6;
@@ -266,7 +279,7 @@
             // OSVersionLabel
             // 
             OSVersionLabel.AutoSize = true;
-            OSVersionLabel.Location = new Point(698, 620);
+            OSVersionLabel.Location = new Point(719, 663);
             OSVersionLabel.Name = "OSVersionLabel";
             OSVersionLabel.Size = new Size(114, 20);
             OSVersionLabel.TabIndex = 7;
@@ -275,7 +288,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(265, 620);
+            label2.Location = new Point(286, 663);
             label2.Name = "label2";
             label2.Size = new Size(146, 20);
             label2.TabIndex = 8;
@@ -284,28 +297,39 @@
             // programVersionLabel
             // 
             programVersionLabel.AutoSize = true;
-            programVersionLabel.Location = new Point(417, 620);
+            programVersionLabel.Location = new Point(438, 663);
             programVersionLabel.Name = "programVersionLabel";
             programVersionLabel.Size = new Size(50, 20);
             programVersionLabel.TabIndex = 9;
             programVersionLabel.Text = "label3";
             // 
-            // restoreUACButton
+            // fileExplorerButton
             // 
-            restoreUACButton.Location = new Point(6, 236);
-            restoreUACButton.Name = "restoreUACButton";
-            restoreUACButton.Size = new Size(221, 29);
-            restoreUACButton.TabIndex = 9;
-            restoreUACButton.Text = "Вернуть UAC";
-            restoreUACButton.UseVisualStyleBackColor = true;
-            restoreUACButton.Click += restoreUACButton_Click;
+            fileExplorerButton.Location = new Point(8, 28);
+            fileExplorerButton.Name = "fileExplorerButton";
+            fileExplorerButton.Size = new Size(217, 29);
+            fileExplorerButton.TabIndex = 10;
+            fileExplorerButton.Text = "Файловая система";
+            fileExplorerButton.UseVisualStyleBackColor = true;
+            fileExplorerButton.Click += fileExplorerButton_Click;
+            // 
+            // groupBox6
+            // 
+            groupBox6.Controls.Add(fileExplorerButton);
+            groupBox6.Location = new Point(12, 125);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(233, 63);
+            groupBox6.TabIndex = 11;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Встроенный проводник";
             // 
             // w
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1064, 652);
+            ClientSize = new Size(1088, 732);
+            Controls.Add(groupBox6);
             Controls.Add(programVersionLabel);
             Controls.Add(label2);
             Controls.Add(OSVersionLabel);
@@ -327,6 +351,7 @@
             panel1.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             groupBox5.ResumeLayout(false);
+            groupBox6.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -357,5 +382,7 @@
         private Label label2;
         private Label programVersionLabel;
         private Button restoreUACButton;
+        private Button fileExplorerButton;
+        private GroupBox groupBox6;
     }
 }

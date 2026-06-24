@@ -23,18 +23,19 @@ namespace VirusBypass
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                // Application.Exit();
+                Application.Exit();
             }
 
             else if (osName.Contains("32"))
             {
                 MessageBox.Show(" :(\r\n" +
-                    "Часть функций программы МОЖЕТ не работать на 32-битной версии Windows",
-                    "Предупреждение",
+                    "Для использования программы VirusBypass на 32-битной Windows скачайте нужную версию программы:\r\n" +
+                    "https://github.com/AlekseyElcha/virus-bypass-windows/releases",
+                    "Проблемы с совместимостью",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                // Application.Exit();
+                Application.Exit();
             }
 
             else if (osName.Contains("Windows XP"))
@@ -100,6 +101,16 @@ namespace VirusBypass
             panel1.Controls.Clear();
 
             DiskHelper myControl = new DiskHelper();
+
+            myControl.Dock = DockStyle.Fill;
+
+            panel1.Controls.Add(myControl);
+        }
+        private void fileExplorerButton_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+
+            FileExplorer myControl = new FileExplorer();
 
             myControl.Dock = DockStyle.Fill;
 
