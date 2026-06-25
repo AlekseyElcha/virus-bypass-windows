@@ -36,12 +36,13 @@
             // 
             // updateInfoButton
             // 
-            updateInfoButton.Location = new Point(452, 521);
+            updateInfoButton.BackColor = Color.Bisque;
+            updateInfoButton.Location = new Point(445, 521);
             updateInfoButton.Name = "updateInfoButton";
             updateInfoButton.Size = new Size(276, 29);
             updateInfoButton.TabIndex = 0;
             updateInfoButton.Text = "Сканировать разделы";
-            updateInfoButton.UseVisualStyleBackColor = true;
+            updateInfoButton.UseVisualStyleBackColor = false;
             updateInfoButton.Click += button1_Click;
             // 
             // listView1
@@ -54,12 +55,13 @@
             // 
             // deletePartitionButton
             // 
+            deletePartitionButton.BackColor = Color.Bisque;
             deletePartitionButton.Location = new Point(58, 521);
             deletePartitionButton.Name = "deletePartitionButton";
             deletePartitionButton.Size = new Size(276, 29);
             deletePartitionButton.TabIndex = 2;
             deletePartitionButton.Text = "Удалить выбранный раздел";
-            deletePartitionButton.UseVisualStyleBackColor = true;
+            deletePartitionButton.UseVisualStyleBackColor = false;
             deletePartitionButton.Click += deletePartitionButton_Click;
             // 
             // label1

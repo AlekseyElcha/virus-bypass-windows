@@ -50,22 +50,24 @@
             // 
             // restoreCmdLineButton
             // 
+            restoreCmdLineButton.BackColor = SystemColors.ControlLight;
             restoreCmdLineButton.Location = new Point(379, 77);
             restoreCmdLineButton.Name = "restoreCmdLineButton";
             restoreCmdLineButton.Size = new Size(188, 53);
             restoreCmdLineButton.TabIndex = 0;
             restoreCmdLineButton.Text = "Восстановить по умолчанию";
-            restoreCmdLineButton.UseVisualStyleBackColor = true;
+            restoreCmdLineButton.UseVisualStyleBackColor = false;
             restoreCmdLineButton.Click += restoreCmdLineButton_Click;
             // 
             // enableCursorButton
             // 
+            enableCursorButton.BackColor = SystemColors.ControlLight;
             enableCursorButton.Location = new Point(379, 152);
             enableCursorButton.Name = "enableCursorButton";
             enableCursorButton.Size = new Size(188, 53);
             enableCursorButton.TabIndex = 1;
             enableCursorButton.Text = "Включить курсор в CmdLine";
-            enableCursorButton.UseVisualStyleBackColor = true;
+            enableCursorButton.UseVisualStyleBackColor = false;
             enableCursorButton.Click += enableCursorButton_Click;
             // 
             // listView1
@@ -155,22 +157,24 @@
             // 
             // restoreWinlogonShellButton
             // 
+            restoreWinlogonShellButton.BackColor = SystemColors.ControlLight;
             restoreWinlogonShellButton.Location = new Point(379, 166);
             restoreWinlogonShellButton.Name = "restoreWinlogonShellButton";
             restoreWinlogonShellButton.Size = new Size(188, 53);
             restoreWinlogonShellButton.TabIndex = 9;
             restoreWinlogonShellButton.Text = "Восстановить shell по умолчанию";
-            restoreWinlogonShellButton.UseVisualStyleBackColor = true;
+            restoreWinlogonShellButton.UseVisualStyleBackColor = false;
             restoreWinlogonShellButton.Click += restoreWinlogonShellButton_Click;
             // 
             // restoreWinlogonUserinitButton
             // 
+            restoreWinlogonUserinitButton.BackColor = SystemColors.ControlLight;
             restoreWinlogonUserinitButton.Location = new Point(379, 91);
             restoreWinlogonUserinitButton.Name = "restoreWinlogonUserinitButton";
             restoreWinlogonUserinitButton.Size = new Size(188, 53);
             restoreWinlogonUserinitButton.TabIndex = 8;
             restoreWinlogonUserinitButton.Text = "Восстановить userinit по умолчанию";
-            restoreWinlogonUserinitButton.UseVisualStyleBackColor = true;
+            restoreWinlogonUserinitButton.UseVisualStyleBackColor = false;
             restoreWinlogonUserinitButton.Click += restoreWinlogonUserinitButton_Click;
             // 
             // CmdLineManager

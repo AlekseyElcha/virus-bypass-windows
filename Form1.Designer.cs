@@ -76,22 +76,24 @@
             // 
             // processesButton
             // 
+            processesButton.BackColor = SystemColors.InactiveCaption;
             processesButton.Location = new Point(6, 61);
             processesButton.Name = "processesButton";
             processesButton.Size = new Size(219, 29);
             processesButton.TabIndex = 1;
             processesButton.Text = "Управление процессами";
-            processesButton.UseVisualStyleBackColor = true;
+            processesButton.UseVisualStyleBackColor = false;
             processesButton.Click += processesButton_Click;
             // 
             // autoStartupButton
             // 
+            autoStartupButton.BackColor = SystemColors.InactiveCaption;
             autoStartupButton.Location = new Point(6, 26);
             autoStartupButton.Name = "autoStartupButton";
             autoStartupButton.Size = new Size(219, 29);
             autoStartupButton.TabIndex = 0;
             autoStartupButton.Text = "Автозагрузка";
-            autoStartupButton.UseVisualStyleBackColor = true;
+            autoStartupButton.UseVisualStyleBackColor = false;
             autoStartupButton.Click += autoStartupButton_Click;
             // 
             // groupBox2
@@ -113,12 +115,13 @@
             // 
             // restoreUACButton
             // 
+            restoreUACButton.BackColor = Color.LightCyan;
             restoreUACButton.Location = new Point(6, 236);
             restoreUACButton.Name = "restoreUACButton";
             restoreUACButton.Size = new Size(221, 29);
             restoreUACButton.TabIndex = 9;
             restoreUACButton.Text = "Вернуть UAC";
-            restoreUACButton.UseVisualStyleBackColor = true;
+            restoreUACButton.UseVisualStyleBackColor = false;
             restoreUACButton.Click += restoreUACButton_Click;
             // 
             // restoreFontsButton
@@ -133,62 +136,68 @@
             // 
             // resetLimitsButton
             // 
+            resetLimitsButton.BackColor = Color.LightCyan;
             resetLimitsButton.Location = new Point(8, 201);
             resetLimitsButton.Name = "resetLimitsButton";
             resetLimitsButton.Size = new Size(219, 29);
             resetLimitsButton.TabIndex = 8;
             resetLimitsButton.Text = "Сбросить ограничения";
-            resetLimitsButton.UseVisualStyleBackColor = true;
+            resetLimitsButton.UseVisualStyleBackColor = false;
             resetLimitsButton.Click += resetLimitsButton_Click;
             // 
             // accessibilityToolRestoreButton
             // 
+            accessibilityToolRestoreButton.BackColor = Color.LightCyan;
             accessibilityToolRestoreButton.Location = new Point(6, 96);
             accessibilityToolRestoreButton.Name = "accessibilityToolRestoreButton";
             accessibilityToolRestoreButton.Size = new Size(221, 29);
             accessibilityToolRestoreButton.TabIndex = 5;
             accessibilityToolRestoreButton.Text = "Вернуть sethc и utilman";
-            accessibilityToolRestoreButton.UseVisualStyleBackColor = true;
+            accessibilityToolRestoreButton.UseVisualStyleBackColor = false;
             accessibilityToolRestoreButton.Click += accessibilityToolRestoreButton_Click;
             // 
             // sfcScannowButton
             // 
+            sfcScannowButton.BackColor = Color.LightCyan;
             sfcScannowButton.Location = new Point(6, 131);
             sfcScannowButton.Name = "sfcScannowButton";
             sfcScannowButton.Size = new Size(221, 29);
             sfcScannowButton.TabIndex = 3;
             sfcScannowButton.Text = "sfc /scannow";
-            sfcScannowButton.UseVisualStyleBackColor = true;
+            sfcScannowButton.UseVisualStyleBackColor = false;
             sfcScannowButton.Click += sfcScannowButton_Click;
             // 
             // restoreDISMButton
             // 
+            restoreDISMButton.BackColor = Color.LightCyan;
             restoreDISMButton.Location = new Point(6, 166);
             restoreDISMButton.Name = "restoreDISMButton";
             restoreDISMButton.Size = new Size(221, 29);
             restoreDISMButton.TabIndex = 7;
             restoreDISMButton.Text = "Восстановить образ ОС";
-            restoreDISMButton.UseVisualStyleBackColor = true;
+            restoreDISMButton.UseVisualStyleBackColor = false;
             restoreDISMButton.Click += restoreDISMButton_Click;
             // 
             // cmdLineButton
             // 
+            cmdLineButton.BackColor = Color.LightCyan;
             cmdLineButton.Location = new Point(6, 26);
             cmdLineButton.Name = "cmdLineButton";
             cmdLineButton.Size = new Size(221, 29);
             cmdLineButton.TabIndex = 1;
             cmdLineButton.Text = "CmdLine и Winlogon";
-            cmdLineButton.UseVisualStyleBackColor = true;
+            cmdLineButton.UseVisualStyleBackColor = false;
             cmdLineButton.Click += cmdLineButton_Click;
             // 
             // accessibilityToolSubstButton
             // 
+            accessibilityToolSubstButton.BackColor = Color.LightCyan;
             accessibilityToolSubstButton.Location = new Point(8, 61);
             accessibilityToolSubstButton.Name = "accessibilityToolSubstButton";
             accessibilityToolSubstButton.Size = new Size(219, 29);
             accessibilityToolSubstButton.TabIndex = 0;
             accessibilityToolSubstButton.Text = "Подменить sethc и utilman";
-            accessibilityToolSubstButton.UseVisualStyleBackColor = true;
+            accessibilityToolSubstButton.UseVisualStyleBackColor = false;
             accessibilityToolSubstButton.Click += accessibilityToolSubstButton_Click;
             // 
             // panel1
@@ -228,12 +237,13 @@
             // 
             // utilsButton
             // 
+            utilsButton.BackColor = Color.MistyRose;
             utilsButton.Location = new Point(6, 26);
             utilsButton.Name = "utilsButton";
             utilsButton.Size = new Size(219, 29);
             utilsButton.TabIndex = 0;
             utilsButton.Text = "Открыть меню";
-            utilsButton.UseVisualStyleBackColor = true;
+            utilsButton.UseVisualStyleBackColor = false;
             utilsButton.Click += utilsButton_Click;
             // 
             // aboutProgramButton
@@ -259,12 +269,13 @@
             // 
             // diskButton
             // 
+            diskButton.BackColor = Color.PaleTurquoise;
             diskButton.Location = new Point(6, 26);
             diskButton.Name = "diskButton";
             diskButton.Size = new Size(219, 29);
             diskButton.TabIndex = 0;
             diskButton.Text = "Открыть меню";
-            diskButton.UseVisualStyleBackColor = true;
+            diskButton.UseVisualStyleBackColor = false;
             diskButton.Click += diskButton_Click;
             // 
             // label1
@@ -305,12 +316,14 @@
             // 
             // fileExplorerButton
             // 
+            fileExplorerButton.BackColor = Color.Moccasin;
+            fileExplorerButton.ForeColor = Color.Black;
             fileExplorerButton.Location = new Point(8, 28);
             fileExplorerButton.Name = "fileExplorerButton";
             fileExplorerButton.Size = new Size(217, 29);
             fileExplorerButton.TabIndex = 10;
             fileExplorerButton.Text = "Файловая система";
-            fileExplorerButton.UseVisualStyleBackColor = true;
+            fileExplorerButton.UseVisualStyleBackColor = false;
             fileExplorerButton.Click += fileExplorerButton_Click;
             // 
             // groupBox6

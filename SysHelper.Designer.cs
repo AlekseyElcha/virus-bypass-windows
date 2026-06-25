@@ -59,72 +59,79 @@
             // 
             // clearDisksButton
             // 
+            clearDisksButton.BackColor = Color.MistyRose;
             clearDisksButton.Location = new Point(6, 96);
             clearDisksButton.Name = "clearDisksButton";
             clearDisksButton.Size = new Size(338, 29);
             clearDisksButton.TabIndex = 1;
             clearDisksButton.Text = "Очистка дисков";
-            clearDisksButton.UseVisualStyleBackColor = true;
+            clearDisksButton.UseVisualStyleBackColor = false;
             clearDisksButton.Click += clearDisksButton_Click;
             // 
             // DNSCacheButton
             // 
+            DNSCacheButton.BackColor = Color.LemonChiffon;
             DNSCacheButton.Location = new Point(7, 61);
             DNSCacheButton.Name = "DNSCacheButton";
             DNSCacheButton.Size = new Size(331, 29);
             DNSCacheButton.TabIndex = 2;
             DNSCacheButton.Text = "Очистить кэш DNS";
-            DNSCacheButton.UseVisualStyleBackColor = true;
+            DNSCacheButton.UseVisualStyleBackColor = false;
             DNSCacheButton.Click += DNSCacheButton_Click;
             // 
             // defragDisksButton
             // 
+            defragDisksButton.BackColor = Color.MistyRose;
             defragDisksButton.Location = new Point(6, 61);
             defragDisksButton.Name = "defragDisksButton";
             defragDisksButton.Size = new Size(338, 29);
             defragDisksButton.TabIndex = 3;
             defragDisksButton.Text = "Дефрагментация дисков";
-            defragDisksButton.UseVisualStyleBackColor = true;
+            defragDisksButton.UseVisualStyleBackColor = false;
             defragDisksButton.Click += defragDisksButton_Click;
             // 
             // deviceManagerButton
             // 
+            deviceManagerButton.BackColor = Color.LavenderBlush;
             deviceManagerButton.Location = new Point(7, 61);
             deviceManagerButton.Name = "deviceManagerButton";
             deviceManagerButton.Size = new Size(331, 29);
             deviceManagerButton.TabIndex = 4;
             deviceManagerButton.Text = "Диспетчер устройств";
-            deviceManagerButton.UseVisualStyleBackColor = true;
+            deviceManagerButton.UseVisualStyleBackColor = false;
             deviceManagerButton.Click += deviceManagerButton_Click;
             // 
             // checkDisksButton
             // 
+            checkDisksButton.BackColor = Color.MistyRose;
             checkDisksButton.Location = new Point(6, 26);
             checkDisksButton.Name = "checkDisksButton";
             checkDisksButton.Size = new Size(338, 29);
             checkDisksButton.TabIndex = 5;
             checkDisksButton.Text = "Проверить диски на ошибки";
-            checkDisksButton.UseVisualStyleBackColor = true;
+            checkDisksButton.UseVisualStyleBackColor = false;
             checkDisksButton.Click += checkDisksButton_Click;
             // 
             // serviceManagementButton
             // 
+            serviceManagementButton.BackColor = Color.LemonChiffon;
             serviceManagementButton.Location = new Point(6, 26);
             serviceManagementButton.Name = "serviceManagementButton";
             serviceManagementButton.Size = new Size(332, 29);
             serviceManagementButton.TabIndex = 6;
             serviceManagementButton.Text = "Управление службами";
-            serviceManagementButton.UseVisualStyleBackColor = true;
+            serviceManagementButton.UseVisualStyleBackColor = false;
             serviceManagementButton.Click += serviceManagementButton_Click;
             // 
             // groupPoliciesButton
             // 
+            groupPoliciesButton.BackColor = Color.LavenderBlush;
             groupPoliciesButton.Location = new Point(7, 26);
             groupPoliciesButton.Name = "groupPoliciesButton";
             groupPoliciesButton.Size = new Size(331, 29);
             groupPoliciesButton.TabIndex = 7;
             groupPoliciesButton.Text = "Групповые политики";
-            groupPoliciesButton.UseVisualStyleBackColor = true;
+            groupPoliciesButton.UseVisualStyleBackColor = false;
             groupPoliciesButton.Click += groupPoliciesButton_Click;
             // 
             // groupBox1
@@ -153,42 +160,46 @@
             // 
             // resetHostsButton
             // 
+            resetHostsButton.BackColor = Color.LemonChiffon;
             resetHostsButton.Location = new Point(7, 96);
             resetHostsButton.Name = "resetHostsButton";
             resetHostsButton.Size = new Size(331, 29);
             resetHostsButton.TabIndex = 13;
             resetHostsButton.Text = "Сброс файла Hosts";
-            resetHostsButton.UseVisualStyleBackColor = true;
+            resetHostsButton.UseVisualStyleBackColor = false;
             resetHostsButton.Click += resetHostsButton_Click;
             // 
             // unblockTaskmgrButton
             // 
+            unblockTaskmgrButton.BackColor = Color.OldLace;
             unblockTaskmgrButton.Location = new Point(6, 61);
             unblockTaskmgrButton.Name = "unblockTaskmgrButton";
             unblockTaskmgrButton.Size = new Size(332, 29);
             unblockTaskmgrButton.TabIndex = 11;
             unblockTaskmgrButton.Text = "Разблокировать Диспетчер задач";
-            unblockTaskmgrButton.UseVisualStyleBackColor = true;
+            unblockTaskmgrButton.UseVisualStyleBackColor = false;
             unblockTaskmgrButton.Click += unblockTaskmgrButton_Click;
             // 
             // unblockRegeditButton
             // 
+            unblockRegeditButton.BackColor = Color.OldLace;
             unblockRegeditButton.Location = new Point(6, 26);
             unblockRegeditButton.Name = "unblockRegeditButton";
             unblockRegeditButton.Size = new Size(332, 29);
             unblockRegeditButton.TabIndex = 12;
             unblockRegeditButton.Text = "Разблокировать Редактор реестра";
-            unblockRegeditButton.UseVisualStyleBackColor = true;
+            unblockRegeditButton.UseVisualStyleBackColor = false;
             unblockRegeditButton.Click += unblockRegeditButton_Click;
             // 
             // resetAssociationsButton
             // 
+            resetAssociationsButton.BackColor = Color.OldLace;
             resetAssociationsButton.Location = new Point(6, 96);
             resetAssociationsButton.Name = "resetAssociationsButton";
             resetAssociationsButton.Size = new Size(332, 29);
             resetAssociationsButton.TabIndex = 14;
             resetAssociationsButton.Text = "Сброс ассоциаций .exe / .lnk";
-            resetAssociationsButton.UseVisualStyleBackColor = true;
+            resetAssociationsButton.UseVisualStyleBackColor = false;
             resetAssociationsButton.Click += resetAssociationsButton_Click;
             // 
             // groupBox4
@@ -205,62 +216,68 @@
             // 
             // normalBootButton
             // 
+            normalBootButton.BackColor = Color.PeachPuff;
             normalBootButton.Location = new Point(6, 61);
             normalBootButton.Name = "normalBootButton";
             normalBootButton.Size = new Size(338, 29);
             normalBootButton.TabIndex = 18;
             normalBootButton.Text = "Перезагрузить ПК";
-            normalBootButton.UseVisualStyleBackColor = true;
+            normalBootButton.UseVisualStyleBackColor = false;
             normalBootButton.Click += normalBootButton_Click;
             // 
             // safeModeBootButton
             // 
+            safeModeBootButton.BackColor = Color.PeachPuff;
             safeModeBootButton.Location = new Point(6, 26);
             safeModeBootButton.Name = "safeModeBootButton";
             safeModeBootButton.Size = new Size(338, 29);
             safeModeBootButton.TabIndex = 17;
             safeModeBootButton.Text = "Запуск в безопасном режиме";
-            safeModeBootButton.UseVisualStyleBackColor = true;
+            safeModeBootButton.UseVisualStyleBackColor = false;
             safeModeBootButton.Click += safeModeBootButton_Click;
             // 
             // restartExplorerButton
             // 
+            restartExplorerButton.BackColor = Color.PeachPuff;
             restartExplorerButton.Location = new Point(6, 96);
             restartExplorerButton.Name = "restartExplorerButton";
             restartExplorerButton.Size = new Size(338, 29);
             restartExplorerButton.TabIndex = 16;
             restartExplorerButton.Text = "Перезапустить проводника";
-            restartExplorerButton.UseVisualStyleBackColor = true;
+            restartExplorerButton.UseVisualStyleBackColor = false;
             restartExplorerButton.Click += restartExplorerButton_Click;
             // 
             // resetUpdateCenterButton
             // 
+            resetUpdateCenterButton.BackColor = Color.LavenderBlush;
             resetUpdateCenterButton.Location = new Point(6, 131);
             resetUpdateCenterButton.Name = "resetUpdateCenterButton";
             resetUpdateCenterButton.Size = new Size(331, 29);
             resetUpdateCenterButton.TabIndex = 16;
             resetUpdateCenterButton.Text = "Сброс Центра обновлений";
-            resetUpdateCenterButton.UseVisualStyleBackColor = true;
+            resetUpdateCenterButton.UseVisualStyleBackColor = false;
             resetUpdateCenterButton.Click += resetUpdateCenterButton_Click;
             // 
             // pcManagerButton
             // 
+            pcManagerButton.BackColor = Color.LavenderBlush;
             pcManagerButton.Location = new Point(6, 96);
             pcManagerButton.Name = "pcManagerButton";
             pcManagerButton.Size = new Size(331, 29);
             pcManagerButton.TabIndex = 15;
             pcManagerButton.Text = "Управление компьютером";
-            pcManagerButton.UseVisualStyleBackColor = true;
+            pcManagerButton.UseVisualStyleBackColor = false;
             pcManagerButton.Click += pcManagerButton_Click;
             // 
             // activateWindowsButton
             // 
+            activateWindowsButton.BackColor = Color.PeachPuff;
             activateWindowsButton.Location = new Point(6, 135);
             activateWindowsButton.Name = "activateWindowsButton";
             activateWindowsButton.Size = new Size(338, 29);
             activateWindowsButton.TabIndex = 0;
             activateWindowsButton.Text = "Активация Windows";
-            activateWindowsButton.UseVisualStyleBackColor = true;
+            activateWindowsButton.UseVisualStyleBackColor = false;
             activateWindowsButton.Click += activateWindowsButton_Click;
             // 
             // groupBox3
